@@ -280,6 +280,23 @@ a:hover {
     text-align: center;
     font-family: "Computer Modern", serif;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+    color: var(--text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.formula var {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.formula .operator {
+    margin: 0 0.3rem;
+    color: var(--text-light);
 }
 
 .visualization {
