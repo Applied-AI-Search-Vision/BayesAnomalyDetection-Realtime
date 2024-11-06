@@ -2,6 +2,7 @@
 
 A real-time anomaly detection system using TCNATT and Stacked Autoencoder models with GP-based uncertainty quantification.
 
+Link to my GitHub IO page for this project: https://applied-ai-search-vision.github.io/BayesAnomalyDetection-Realtime/
 ## Models and Architectures
 
 ### Gaussian Process (GP) Models
