@@ -43,12 +43,50 @@
                 </div>
             </div>
         </section>
+
+        <section id="uncertainty" class="section">
+            <h2>Uncertainty Quantification</h2>
+            
+            <div class="content-grid">
+                <div class="text-content">
+                    <h3>GP Multivariate Distribution Analysis</h3>
+                    <p>Our approach leverages Gaussian Process (GP) modeling to quantify uncertainty in anomaly detection. The visualization shows the GP multivariate distribution across three principal components, with uncertainty levels indicated by color intensity.</p>
+                    
+                    <div class="metrics-box">
+                        <h4>Explained Variance Ratios:</h4>
+                        <ul>
+                            <li>PC1: 0.235 - Primary variance component</li>
+                            <li>PC2: 0.054 - Secondary variance component</li>
+                            <li>PC3: 0.026 - Tertiary variance component</li>
+                        </ul>
+                    </div>
+
+                    <h3>ELBO-based Uncertainty Quantification</h3>
+                    <p>We employ the Evidence Lower BOund (ELBO) to optimize our variational inference:</p>
+                    <div class="formula">
+                        ELBO = 𝔼[log p(x|z)] - KL(q(z|x)||p(z))
+                    </div>
+                    <p>Where:</p>
+                    <ul>
+                        <li>𝔼[log p(x|z)] represents the expected log-likelihood</li>
+                        <li>KL(q(z|x)||p(z)) is the Kullback-Leibler divergence</li>
+                        <li>q(z|x) is the variational distribution</li>
+                        <li>p(z) is the prior distribution</li>
+                    </ul>
+                </div>
+                
+                <div class="visualization">
+                    <img src="assets/images/gp_distribution.png" alt="GP Multivariate Distribution with Uncertainties" class="analysis-image">
+                    <p class="image-caption">3D visualization of GP uncertainty distribution across principal components</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
             <p>© 2024 Real-time Anomaly Detection System</p>
-            <p><a href="https://github.com/Applied-AI-Search-Vision/BayesAnomalyDetection-Realtime">View on GitHub</a></p>
+            <p><a href="https://github.com/yourusername/BayesAnomalyDetection-Realtime">View on GitHub</a></p>
         </div>
     </footer>
 </body>
