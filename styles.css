@@ -226,3 +226,85 @@ a:hover {
     background-color: var(--primary-light);
     transform: translateY(-2px);
 }
+
+/* Add these new styles to your existing CSS file */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.text-content {
+    font-size: 1.1rem;
+}
+
+.metrics-box {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.metrics-box h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.metrics-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.metrics-box li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.metrics-box li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.formula {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-family: "Computer Modern", serif;
+    font-size: 1.2rem;
+}
+
+.visualization {
+    position: relative;
+}
+
+.analysis-image {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    text-align: center;
+    color: var(--text-light);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .visualization {
+        margin-top: 2rem;
+    }
+}
