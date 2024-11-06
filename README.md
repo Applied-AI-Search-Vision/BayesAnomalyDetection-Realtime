@@ -1,6 +1,6 @@
 # Real-time Anomaly Detection System
 
-A real-time anomaly detection system using TCNATT and Stacked Autoencoder models with GP-based uncertainty quantification.
+A real-time anomaly detection system using a built temporal convolutional attention-based neural network with Gaussian process-based uncertainty quantification.
 
 Link to my GitHub IO page for this project: https://applied-ai-search-vision.github.io/BayesAnomalyDetection-Realtime/
 ## Models and Architectures
