@@ -30,6 +30,42 @@ body {
     padding: 0 2rem;
 }
 
+.uncertainty-zones ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.uncertainty-zones ul ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.uncertainty-zones li {
+    margin: 10px 0;
+}
+
+.uncertainty-zones strong {
+    color: #2c3e50;
+}
+
+.component-details {
+    margin-top: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.component-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.component-details li {
+    margin: 5px 0;
+    padding-left: 15px;
+    border-left: 3px solid #3498db;
+}
+
 /* Header Styles */
 .site-header {
     background-color: var(--card-bg);
