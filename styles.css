@@ -363,3 +363,31 @@ a:hover {
         margin-top: 2rem;
     }
 }
+
+/* GMM Component Analysis Styles */
+.content-grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.visualization {
+    overflow-x: hidden;
+    position: relative;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.text-content {
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.image-caption {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+    text-align: left;
+    padding-left: 60px;
+}
