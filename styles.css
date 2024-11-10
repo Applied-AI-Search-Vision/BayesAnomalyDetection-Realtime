@@ -367,21 +367,28 @@ a:hover {
 /* GMM Component Analysis Styles */
 .content-grid {
     display: grid;
-    grid-template-columns: 25% 75%;
-    gap: 20px;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
     margin: 20px 0;
 }
 
 .visualization {
     overflow-x: hidden;
     position: relative;
-    margin-left: 20px;
+    margin-left: 0;
     width: 100%;
 }
 
 .text-content {
-    padding-right: 20px;
-    max-width: 300px;
+    padding-right: 15px;
+    max-width: 350px;
+}
+
+.visualization iframe {
+    transform: translateX(20%);
+    width: 180%;
+    height: 600px;
+    border: none;
 }
 
 .image-caption {
@@ -390,4 +397,5 @@ a:hover {
     font-style: italic;
     text-align: left;
     padding-left: 60px;
+    transform: translateX(20%);
 }
