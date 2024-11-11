@@ -369,8 +369,8 @@ a:hover {
 /* GMM Component Analysis Styles */
 .content-grid {
     display: grid;
-    grid-template-columns: 350px 1fr; /* Fixed width for text column */
-    gap: 40px;
+    grid-template-columns: 350px 1fr;
+    gap: 20px;
     align-items: start;
     margin: 20px auto;
     max-width: 100%;
@@ -386,7 +386,7 @@ a:hover {
     width: 200%;
     height: 700px;
     border: none;
-    transform: translateX(20%);
+    transform: translateX(10%);
     margin-bottom: 20px;
 }
 
@@ -409,16 +409,13 @@ a:hover {
 }
 
 .image-caption {
-    margin-top: 20px;
-    color: #666;
-    font-style: italic;
-    transform: translateX(20%);
+    transform: translateX(10%);
     width: 200%;
     text-align: center;
 }
 
 .component-details {
-    transform: translateX(20%);
+    transform: translateX(10%);
     width: 200%;
     margin-top: 20px;
     background: #f8f9fa;
