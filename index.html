@@ -91,20 +91,20 @@
                     <h3>Gaussian Mixture Model Components</h3>
                     <p>Our uncertainty quantification system uses a 4-component GMM to classify prediction confidence levels:</p>
                     
-                    <div class="uncertainty-zones">
+                    <div class="traffic-zones">
                         <h4>Traffic Light Zones:</h4>
                         <ul>
                             <li><strong>Green Zone (x < -0.5)</strong>: 
                                 <ul>
                                     <li>Highest confidence predictions</li>
                                     <li>Dominant peak indicating reliable model performance</li>
-                                    <li>Represents the early stages of when an engine first starts to generate vibration signals</li>
+                                    <li>Represents standard operating conditions</li>
                                 </ul>
                             </li>
                             <li><strong>Yellow Zone (-0.5 ≤ x < 1.0)</strong>:
                                 <ul>
                                     <li>Moderate uncertainty level</li>
-                                    <li>Transition region between confident and uncertain predictions. This region is marked by increasing bearing temperature and increased engine volatility</li>
+                                    <li>Transition region between confident and uncertain predictions</li>
                                     <li>Requires increased monitoring</li>
                                 </ul>
                             </li>
@@ -112,7 +112,7 @@
                                 <ul>
                                     <li>High uncertainty predictions</li>
                                     <li>Two distinct components for different types of uncertainty</li>
-                                    <li>Indicates potential anomalies, i.e vibration signals outside of the normal pattern, or edge cases</li>
+                                    <li>Indicates potential anomalies or edge cases</li>
                                 </ul>
                             </li>
                         </ul>
@@ -130,14 +130,8 @@
                 </div>
                 
                 <div class="visualization">
-                    <iframe 
-                        src="gmm_components_static.html" 
-                        width="100%" 
-                        height="400px" 
-                        frameborder="0" 
-                        style="transform: translateX(10%);"
-                    ></iframe>
-                    <p class="image-caption" style="transform: translateX(10%);">
+                    <iframe src="gmm_components_static.html"></iframe>
+                    <p class="image-caption">
                         GMM components showing uncertainty distribution across traffic light zones
                     </p>
                     <div class="component-details">
@@ -152,6 +146,35 @@
                 </div>
             </div>
         </section>
+
+        <section id="inference" class="section">
+            <h2>Run Inference on Your Data</h2>
+            <div class="upload-container">
+                <div class="upload-box">
+                    <form id="uploadForm" class="upload-form">
+                        <div class="file-drop-area">
+                            <span class="fake-btn">Choose files</span>
+                            <span class="file-msg">or drag and drop files here</span>
+                            <input class="file-input" type="file" accept=".csv" required>
+                        </div>
+                        <div class="file-requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>CSV format only</li>
+                                <li>Time series data in columns</li>
+                                <li>Maximum file size: 100MB</li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="submit-btn">Run Inference</button>
+                    </form>
+                </div>
+                <div id="results" class="results-container" style="display: none;">
+                    <h3>Results</h3>
+                    <div id="inferenceProgress" class="progress-bar"></div>
+                    <div id="inferenceResults"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -160,6 +183,7 @@
             <p><a href="https://github.com/Applied-AI-Search-Vision/BayesAnomalyDetection-Realtime">View on GitHub</a></p>
         </div>
     </footer>
+
     <!-- Add before closing body tag -->
     <script src="main.js"></script>
 </body>
