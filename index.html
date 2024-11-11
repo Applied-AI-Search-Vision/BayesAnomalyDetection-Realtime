@@ -152,11 +152,12 @@
                 <div class="upload-box">
                     <form id="uploadForm" class="upload-form">
                         <div class="file-drop-area">
-                            <span class="fake-btn">Choose files</span>
+                            <button type="button" class="choose-files-btn">Choose files</button>
                             <span class="file-msg">or drag and drop files here</span>
-                            <input class="file-input" type="file" accept=".csv" required>
+                            <input class="file-input" type="file" accept=".csv" required hidden>
                         </div>
-                        <div class="file-requirements">
+                        
+                        <div class="requirements">
                             <h4>Requirements:</h4>
                             <ul>
                                 <li>CSV format only</li>
@@ -164,13 +165,11 @@
                                 <li>Maximum file size: 100MB</li>
                             </ul>
                         </div>
-                        <button type="submit" class="submit-btn">Run Inference</button>
+                        
+                        <button type="submit" class="run-inference-btn" disabled>
+                            Run Inference
+                        </button>
                     </form>
-                </div>
-                <div id="results" class="results-container" style="display: none;">
-                    <h3>Results</h3>
-                    <div id="inferenceProgress" class="progress-bar"></div>
-                    <div id="inferenceResults"></div>
                 </div>
             </div>
         </section>
