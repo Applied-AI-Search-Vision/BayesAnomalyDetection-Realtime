@@ -628,3 +628,50 @@ a:hover {
     line-height: 1.5;
     margin: 0;
 }
+
+.elbo-section {
+    padding: 4rem 0;
+}
+
+.elbo-section .formula {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-family: "Computer Modern", serif;
+    font-size: 1.2rem;
+}
+
+.elbo-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.elbo-section li {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.elbo-section li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.elbo-section .analysis-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .elbo-section .formula {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
