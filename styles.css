@@ -607,3 +607,24 @@ a:hover {
     padding-left: 3rem; /* Match the upload-box padding */
     margin-bottom: 2rem;
 }
+
+.example-analysis {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.example-analysis .analysis-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.example-analysis .image-caption {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
