@@ -675,3 +675,26 @@ a:hover {
         padding: 1rem;
     }
 }
+
+.uncertainty-section {
+    margin: 2rem 0;
+}
+
+.visualization-grid {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.analysis-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-description {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 1rem 0;
+    color: var(--text-color);
+    font-size: 1rem;
+}
